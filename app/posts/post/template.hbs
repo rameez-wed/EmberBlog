@@ -1,0 +1,18 @@
+<div class="form">
+  <label class="form__label">Title</label><br>
+  <input class="form__text form_text__common" value={{model.title}} placeholder="Title here">
+
+  <div class="text-wrapper">
+    <label class="form__label">Description</label><br>
+    <textarea value={{text}} onchange={{action "onTextChanged" value="target.value"}} class="form__text-area form_text__common" placeholder="Post description goes here...." />
+    <div class="wrapper">
+      <label class="form__label form__label--right">1000 characters left</label>
+    </div>
+  </div>
+  <button class="form__button" title="Save" onclick={{action 'saveClicked'}}>Save</button>
+  <div class="comments">
+    {{#each model.comments as |comment|}}
+    <p>{{comment.text}}</p>
+    {{/each}}
+  </div>
+</div>

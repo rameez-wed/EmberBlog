@@ -1,0 +1,11 @@
+<div class="container">
+  <div data-test-blog-list class="list">
+    {{#each blogs as |post|}}
+    {{blog-post post=post onPostSelected=onPostSelected}}
+    {{/each}}
+  </div>
+  <div class="container__form-post">
+    {{outlet}}
+  </div>
+</div>
+{{yield}}
