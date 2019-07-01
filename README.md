@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/rameez-wed/EmberBlog.git>` this repository
 * `cd ember-blog`
 * `npm install`
 
