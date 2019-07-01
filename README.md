@@ -1,9 +1,5 @@
 # EmberBlog
 This is a simple blog post application which let you read and add blogs
-# ember-blog
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
 
 ## Prerequisites
 
