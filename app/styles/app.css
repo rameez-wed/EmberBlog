@@ -1,3 +1,26 @@
+.header {
+  display: grid;
+  grid-template-columns: 0.9fr 0.06fr;
+}
+
+.header__title {
+  display: flex;
+  flex: 1%;
+  flex-direction: column;
+}
+
+.header__button {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -82,6 +105,24 @@
   display: inline-block; 
   color: #555;
   line-height: 100px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.comment {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.comment-save{
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .save-button {

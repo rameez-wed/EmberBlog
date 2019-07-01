@@ -26,5 +26,8 @@ export default function () {
 
   this.get('posts');
   this.get('posts/:id');
+  this.get('posts/new');
   this.patch('posts/:id');
+  this.post('posts');
+  this.post('comments');
 }

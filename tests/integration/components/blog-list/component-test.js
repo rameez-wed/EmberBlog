@@ -11,8 +11,18 @@ module('Integration | Component | blog-list', function (hooks) {
       id: '5',
       title: 'test-title5',
       description: 'test-description5',
-    }]);
-    await render(hbs`{{blog-list blogs=blogs}}`);
-    assert.equal('test-title5', this.element.querySelector('[data-test-blog-title]').textContent.trim(), "List has the correct number of elements");
+    }
+      , {
+        id: '5',
+        title: 'test-title5',
+        description: 'test-description5',
+      }
+  ]);
+    this.set('onTap', () => {
+      assert.ok("clicked");
+    });
+    await render(hbs`{{blog-list blogs=blogs onPostSelected=onTap}}`);
+    let query = this.element.querySelectorAll('[data-test-blog-title]').length;
+    assert.equal(2, this.element.querySelectorAll('[data-test-blog-title]').length, "List has the correct number of elements");
   });
 });
